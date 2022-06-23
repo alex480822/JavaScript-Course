@@ -18,19 +18,23 @@ console.log(`Cześć, jestem   ${Myname} `)
 
 
 // Zadanie
-// // const firstName = 'Tomek'
-// age = 12
-// age = 18
+// const firstName = 'Tomek'
+age = 12
+age = 18
  
-// const favColor = 'niebieski'
-// const favMeal = 'schabowy'
+const favColor = 'niebieski'
+const favMeal = 'schabowy'
  
-// let currentCar
-// currentCar = 'Audi'
+let currentCar
+currentCar = 'Audi'
  
-// let firstNameSecond = 'Ania'
-// let ageSecond = 24
-// let ulubionyKolor = 'czerwony'
+let firstNameSecond = 'Ania'
+let ageSecond = 24
+let ulubionyKolor = 'czerwony'
+
+
+
+//Zadanie
 
 const msg ='to jest testowa wiadomość';
 
