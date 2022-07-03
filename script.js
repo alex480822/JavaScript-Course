@@ -33,14 +33,14 @@ console.log(`Cześć, jestem   ${Myname} `);
 
 //Zadanie
 
-// const msg = "to jest testowa wiadomość";
+const msg = "to jest testowa wiadomość";
 
-// const newMsg = msg.toUpperCase();
-// console.log(newMsg.toLowerCase());
+const newMsg = msg.toUpperCase();
+console.log(newMsg.toLowerCase());
 
-// const date = new Date();
-// console.log(date.toLocaleDateString("en"));
+const date = new Date();
+console.log(date.toLocaleDateString("en"));
 
-// const userName = "Maciej";
-// const newUsername = userName.charAt(0).toUpperCase() + userName.slice(1);
-// console.log(newUsername);
+const userName = "Maciej";
+const newUsername = userName.charAt(0).toUpperCase() + userName.slice(1);
+console.log(newUsername);
