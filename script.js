@@ -56,18 +56,52 @@ console.log(newUsername);
     toLowerCase()
     toUpperCase()
 */
- 
-const text1 = 'powiększ mnie!'
+
+const text1 = "powiększ mnie!";
 console.log(text1.toUpperCase());
-const text2 = 'ZAPISZ MNIE MAŁYMI LITERAMI'
+const text2 = "ZAPISZ MNIE MAŁYMI LITERAMI";
 console.log(text2.toLowerCase());
-const text3 = '$#%#^ wytnij te dziwne znaki na początku!'
-console.log(text3.slice(5));
-const text4 = 'sprawdź, czy zawieram słowo "czy"'
-console.log(text4.includes('czy'));
-const text5 = 'wyLoguj w konsoli tylko literę "L", która znajduje się w wyrazie "Wyloguj"'
+const text3 = "$#%#^ wytnij te dziwne znaki na początku!";
+console.log(text3.slice(6));
+const text4 = 'sprawdź, czy zawieram słowo "czy"';
+console.log(text4.includes("czy"));
+const text5 =
+	'wyLoguj w konsoli tylko literę "L", która znajduje się w wyrazie "Wyloguj"';
 console.log(text5.charAt(2));
-const text6 = 'pies zamień każde słowo pies, na słowo kot pies'
-console.log(text6.replaceAll('pies', 'kot'))
-const text7 = 'podziel, ten, string, od, przecinków'
-console.log(text7.split(' '))
+const text6 = "pies zamień każde słowo pies, na słowo kot pies";
+console.log(text6.replaceAll("pies", "kot"));
+const text7 = "podziel, ten, string, od, przecinków";
+console.log(text7.split(","));
+
+// Typ Number
+const num1 = 23;
+const num2 = "45";
+console.log(num1 + num2);
+const num3 = 123.23123;
+console.log(num3.toFixed(2));
+const num4 = "5678";
+console.log(parseInt(num4));
+
+// null & undefined
+
+let a = null;
+console.log(a);
+
+// Typy złożone
+const table1 = [123, "abc", true, ["abcde"]];
+const colors = ["red", "green", "blue"];
+console.log(colors);
+
+//funkacja:
+function test() {
+	console.log("cześć jestem w funkcji");
+}
+test();
+
+//obiek, w środku tworzymy pary klucz wartość:
+const person = {
+	name2: "Klaudia",
+	age2: 23,
+	favColor: null,
+};
+console.log(person);
