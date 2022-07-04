@@ -160,22 +160,38 @@ if (!true) {
 //instrukcja warunkowa if
 const color = "blue";
 if (color == "blue") {
-    if (10 > 0) {
-        console.log("true true");
+	if (10 > 0) {
+		console.log("true true");
 	} else {
-        console.log(`Drugi "if" nie spełniony`);
+		console.log(`Drugi "if" nie spełniony`);
 	}
 } else {
-    console.log("false");
+	console.log("false");
 }
 
 //Zagnieżdżona instrukcaj if
 const pass = "qwqweeq22wwe!";
-if (pass.length > 10 && pass.includes('!')) {
-    console.log("masz bardzo dobre hasło");
+if (pass.length > 10 && pass.includes("!")) {
+	console.log("masz bardzo dobre hasło");
 } else if (pass.length > 10) {
-    console.log("masz dobre hasło");
+	console.log("masz dobre hasło");
 } else {
-    console.log("zmień swoje hasło na lepsze");
+	console.log("zmień swoje hasło na lepsze");
 }
 
+// SWITCH
+const day = "środa";
+
+if (day === "poniedziałek") {
+	console.log("Dziś jest poniedziałek");
+} else if (day == "wtorek") {
+	console.log("Dziś jest wtorek");
+} else if (day == "środa") {
+	console.log("Dziś jest środa");
+} else if (day == "czwartek") {
+	console.log("Dziś jest czwartek");
+} else if (day == "piątek") {
+	console.log("Dziś jest piątek");
+} else {
+	console.log("weekend! ;)");
+}
