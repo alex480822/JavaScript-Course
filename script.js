@@ -117,46 +117,65 @@ console.log(`Inkrementacja: ${x}`);
 
 //modulo
 const modulo = 10 % 7;
-console.log(`Reszta z dzielenia 10/7 wynosi: ${modulo}`)
+console.log(`Reszta z dzielenia 10/7 wynosi: ${modulo}`);
 
 let y = 10;
-x += y
-console.log(x)
-x *= y
-console.log(x)
-x /= y
-console.log(x)
-x &= y
-console.log(x)
+x += y;
+console.log(x);
+x *= y;
+console.log(x);
+x /= y;
+console.log(x);
+x &= y;
+console.log(x);
 
 // operatory porównania
-console.log( 10 == '10');
-console.log( 10 === '10');
-console.log('10' === '10')
-console.log('---')
-console.log(`Negacja odwaraca działąnie: ${10 != '10'}`)
-console.log(`Negacja odwaraca działąnie: ${10 !== '10'}`)
-console.log(`Negacja odwaraca działąnie: ${'10' !== '10'}`)
+console.log(10 == "10");
+console.log(10 === "10");
+console.log("10" === "10");
+console.log("---");
+console.log(`Negacja odwaraca działąnie: ${10 != "10"}`);
+console.log(`Negacja odwaraca działąnie: ${10 !== "10"}`);
+console.log(`Negacja odwaraca działąnie: ${"10" !== "10"}`);
 
 // i
-if(true && false){
-    console.log('Like')
-}
-else{
-    console.log('dislike')
+if (true && false) {
+	console.log("Like");
+} else {
+	console.log("dislike");
 }
 //lub
-if(true || false){
-    console.log('Like')
-}
-else{
-    console.log('dislike')
+if (true || false) {
+	console.log("Like");
+} else {
+	console.log("dislike");
 }
 // ! zaprzeczenie
-if(!true){
-    console.log('Like')
+if (!true) {
+	console.log("Like");
+} else {
+	console.log("dislike");
 }
-else{
-    console.log('dislike')
+
+//instrukcja warunkowa if
+const color = "blue";
+if (color == "blue") {
+    if (10 > 0) {
+        console.log("true true");
+	} else {
+        console.log(`Drugi "if" nie spełniony`);
+	}
+} else {
+    console.log("false");
+}
+
+//Zagnieżdżona instrukcaj if
+const pass = "qwqweeq22wwe!";
+if (pass.length > 10 && pass.includes('!')) {
+    console.log("masz bardzo dobre hasło");
+} else if (pass.length > 10) {
+    console.log("masz dobre hasło");
+} else {
+    console.log("zmień swoje hasło na lepsze");
 }
 
