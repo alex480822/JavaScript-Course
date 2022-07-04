@@ -105,3 +105,28 @@ const person = {
 	favColor: null,
 };
 console.log(person);
+
+let x = 4;
+x++;
+x++;
+x++;
+console.log(`Inkrementacja: ${x}`);
+x--;
+x--;
+console.log(`Inkrementacja: ${x}`);
+
+//modulo
+const modulo = 10 % 7;
+console.log(`Reszta z dzielenia 10/7 wynosi: ${modulo}`)
+
+let y = 10;
+x += y
+console.log(x)
+x *= y
+console.log(x)
+x /= y
+console.log(x)
+x &= y
+console.log(x)
+
+
