@@ -129,4 +129,34 @@ console.log(x)
 x &= y
 console.log(x)
 
+// operatory porównania
+console.log( 10 == '10');
+console.log( 10 === '10');
+console.log('10' === '10')
+console.log('---')
+console.log(`Negacja odwaraca działąnie: ${10 != '10'}`)
+console.log(`Negacja odwaraca działąnie: ${10 !== '10'}`)
+console.log(`Negacja odwaraca działąnie: ${'10' !== '10'}`)
+
+// i
+if(true && false){
+    console.log('Like')
+}
+else{
+    console.log('dislike')
+}
+//lub
+if(true || false){
+    console.log('Like')
+}
+else{
+    console.log('dislike')
+}
+// ! zaprzeczenie
+if(!true){
+    console.log('Like')
+}
+else{
+    console.log('dislike')
+}
 
