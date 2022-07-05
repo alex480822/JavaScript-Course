@@ -158,6 +158,7 @@ if (!true) {
 }
 
 //instrukcja warunkowa if
+console.log("---");
 const color = "blue";
 if (color == "blue") {
 	if (10 > 0) {
@@ -170,6 +171,7 @@ if (color == "blue") {
 }
 
 //Zagnieżdżona instrukcaj if
+console.log("---");
 const pass = "qwqweeq22wwe!";
 if (pass.length > 10 && pass.includes("!")) {
 	console.log("masz bardzo dobre hasło");
@@ -180,7 +182,31 @@ if (pass.length > 10 && pass.includes("!")) {
 }
 
 // SWITCH
-const day = "środa";
+
+console.log("---");
+const day = "piątek";
+
+switch (day) {
+	case "poniedziałek":
+		console.log("Dziś jest poniedziałek");
+		break;
+	case "wtorek":
+		console.log("Dziś jest wtorek");
+		break;
+	case "środa":
+		console.log("Dziś jest środa");
+		break;
+	case "czwartek":
+		console.log("Dziś jest czwartek");
+		break;
+	case "piątek":
+		console.log("Dziś jest piątek");
+		break;
+		default:
+			console.log('weekend');
+}
+
+// To samo tylko z if
 
 if (day === "poniedziałek") {
 	console.log("Dziś jest poniedziałek");
@@ -195,3 +221,9 @@ if (day === "poniedziałek") {
 } else {
 	console.log("weekend! ;)");
 }
+
+// instrukcja warunkowa
+const z = 10
+const newX = z > 20 ? `${z} > 20` : `${z} < 20`
+console.log(newX)
+ 
