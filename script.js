@@ -253,3 +253,34 @@ if (s > d) {
 } else if (s < d) {
 	console.log(`${s} < ${d}`);
 }
+
+//Zadanie
+const promo = "60%";
+
+switch (promo) {
+	case "20%":
+		console.log(`Dziś mamy 20% zniżki`);
+		break;
+	case "30%":
+		console.log(`Dziś mamy 30% zniżki`);
+		break;
+	case "40%":
+		console.log(`Dziś mamy 40% zniżki`);
+		break;
+	default:
+		console.log(`Dziś mamy ${promo} zniżki`);
+}
+
+//Zadane
+const r = 10 % 2;
+if (r == 0){
+	console.log(`Liczba jest parzysta`)
+}else{
+	console.log(`Liczba jest nieparzysta`)
+}
+
+//Zadanie to samo tylko operatorem warunkowym
+const t = 11;
+const checkT = (t % 2 == 0) ? `t jest parzyste` : `t nie jest parzyste`
+console.log(checkT);
+
