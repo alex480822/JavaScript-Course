@@ -202,8 +202,8 @@ switch (day) {
 	case "piątek":
 		console.log("Dziś jest piątek");
 		break;
-		default:
-			console.log('weekend');
+	default:
+		console.log("weekend");
 }
 
 // To samo tylko z if
@@ -223,7 +223,33 @@ if (day === "poniedziałek") {
 }
 
 // instrukcja warunkowa
-const z = 10
-const newX = z > 20 ? `${z} > 20` : `${z} < 20`
-console.log(newX)
- 
+const z = 10;
+const newX = z > 20 ? `${z} > 20` : `${z} < 20`;
+console.log(newX);
+
+const q = 50;
+const w = 30;
+
+if (q > w) {
+	console.log(`${q} > ${w}`);
+}
+
+// Zadanie
+const color1 = "blue";
+const newColor1 = "green";
+if (color1 == newColor1) {
+	console.log(`Kolory się zgadzają`);
+} else {
+	console.log(`Kolory się nie zgadzają`);
+}
+
+// Zadanie
+const s = 100;
+const d = 50;
+if (s > d) {
+	console.log(`${s} > ${d}`);
+} else if (s == d) {
+	console.log(`Liczby są równe`);
+} else if (s < d) {
+	console.log(`${s} < ${d}`);
+}
