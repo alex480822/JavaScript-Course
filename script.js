@@ -287,27 +287,32 @@ console.log(checkT);
 //Bardziej zaawansowane zadanie z if
 
 const f = 50;
-let textF 
+let textF;
 
 if (f >= 100) {
-	textF = `x > 100`
+	textF = `x > 100`;
 } else if (f <= 100 && f > 30) {
-	textF = `X jest średniakiem`
-} else if (f <= 30){
-	textF = `x jest mały`
+	textF = `X jest średniakiem`;
+} else if (f <= 30) {
+	textF = `x jest mały`;
 }
 
 console.log(textF.toUpperCase());
 
 // Pętla for
-for ( let i = 0; i <6; i++){
-	console.log(i)
+for (let i = 0; i < 6; i++) {
+	console.log(i);
 }
 
 // for
 const animalS = [`pies`, `kot`, `ryba`, `kurak`, `papuga`];
-for (let u = 0; u < animalS.length; u++){
-	console.log(animalS[u])
+for (let u = 0; u < animalS.length; u++) {
+	console.log(animalS[u]);
 }
 
+// Zadanie for
+const colorsTable = [`red`, `orange`, `black`];
 
+for (let j = 0; j < colorsTable.length; j++) {
+	console.log(colorsTable[j]);
+}
