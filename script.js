@@ -273,15 +273,28 @@ switch (promo) {
 
 //Zadane
 const r = 10 % 2;
-if (r == 0){
-	console.log(`Liczba jest parzysta`)
-}else{
-	console.log(`Liczba jest nieparzysta`)
+if (r == 0) {
+	console.log(`Liczba jest parzysta`);
+} else {
+	console.log(`Liczba jest nieparzysta`);
 }
 
 //Zadanie to samo tylko operatorem warunkowym
 const t = 11;
-const checkT = (t % 2 == 0) ? `t jest parzyste` : `t nie jest parzyste`
+const checkT = t % 2 == 0 ? `t jest parzyste` : `t nie jest parzyste`;
 console.log(checkT);
 
 //Bardziej zaawansowane zadanie z if
+
+const f = 50;
+let textF 
+
+if (f >= 100) {
+	textF = `x > 100`
+} else if (f <= 100 && f > 30) {
+	textF = `X jest średniakiem`
+} else if (f <= 30){
+	textF = `x jest mały`
+}
+
+console.log(textF.toUpperCase());
