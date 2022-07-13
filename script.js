@@ -310,9 +310,9 @@ for (let u = 0; u < animalS.length; u++) {
 	console.log(animalS[u]);
 }
 
-// Zadanie for
-const colorsTable = [`red`, `orange`, `black`];
+// // Zadanie for
+// const colorsTable = [`red`, `orange`, `black`];
 
-for (let j = 0; j < colorsTable.length; j++) {
-	console.log(colorsTable[j]);
-}
+// for (let j = 0; j < colorsTable.length; j++) {
+// 	console.log(colorsTable[j]);
+// }
