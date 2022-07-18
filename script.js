@@ -299,20 +299,20 @@ if (f >= 100) {
 
 console.log(textF.toUpperCase());
 
-// Pętla for
-for (let i = 0; i < 6; i++) {
-	console.log(i);
-}
+// // Pętla for
+// for (let i = 0; i < 6; i++) {
+// 	console.log(i);
+// }
 
-// for
-const animalS = [`pies`, `kot`, `ryba`, `kurak`, `papuga`];
-for (let u = 0; u < animalS.length; u++) {
-	console.log(animalS[u]);
-}
+// // for
+// const animalS = [`pies`, `kot`, `ryba`, `kurak`, `papuga`];
+// for (let u = 0; u < animalS.length; u++) {
+// 	console.log(animalS[u]);
+// }
 
-// // Zadanie for
-const colorsTable = [`red`, `orange`, `black`];
+// // // Zadanie for
+// const colorsTable = [`red`, `orange`, `black`];
 
-for (let j = 0; j < colorsTable.length; j++) {
-	console.log(colorsTable[j]);
-}
+// for (let j = 0; j < colorsTable.length; j++) {
+// 	console.log(colorsTable[j]);
+// }
