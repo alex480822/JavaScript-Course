@@ -362,3 +362,30 @@ while (k < 10){
 	k += 2
 	console.log(k)
 }
+console.log(`Zadanie do while`)
+// Zadanie DO While 
+let rr = 20;
+console.log(`Wartość przed pętą DO WHILE rr = ${rr}`)
+do{
+	rr -=3
+}while(rr > 0)
+console.log(`Wartość po wykonaniu pętli  DO WHILE rr = ${rr}`)
+
+//Zadanie For of z tablicą
+console.log(`Zadanie for of- podzielone przez 5 `)
+const tableForOf = [5,8,10,23,48,60]
+for(const numbersTable of tableForOf){
+	numbersTable / 5
+	console.log(numbersTable)
+}
+
+console.log(`Sprawdzenie które liczby są parzyste a które nie`)
+const tab = [5,8,10,23,48,60]
+for (const tabNumb of tab){
+	if(tabNumb % 2 === 0){
+		console.log(`%cLiczba ${tabNumb} jest parzysta`, `background-color: gold; color: black;`)
+	}
+	else{
+		console.log(`%cliczba ${tabNumb} jest nieparzysta `, `background-color: lightgreen;color:black;`)
+	}
+}
