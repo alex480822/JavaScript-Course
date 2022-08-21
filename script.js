@@ -305,14 +305,47 @@ for (let i = 0; i < 6; i++) {
 }
 
 // for
-// const animalS = [`pies`, `kot`, `ryba`, `kurak`, `papuga`];
-// for (let u = 0; u < animalS.length; u++) {
-// 	console.log(animalS[u]);
-// }
+const animalS = [`pies`, `kot`, `ryba`, `kurak`, `papuga`];
+for (let u = 0; u < animalS.length; u++) {
+	console.log(animalS[u]);
+}
 
 // Zadanie for
-// const colorsTable = [`red`, `orange`, `black`];
+const colorsTable = [`red`, `orange`, `black`];
 
-// for (let j = 0; j < colorsTable.length; j++) {
-// 	console.log(colorsTable[j]);
-// }
+for (let j = 0; j < colorsTable.length; j++) {
+	console.log(colorsTable[j]);
+}
+
+// Pętla while
+let p = 0
+while ( p < 4){
+	console.log(p)
+	p++ 
+	//musi być inkrementacja bo w przeciwnym wypadku pętla będzie wykonywać się bez końca
+}
+
+console.log(`do while`)
+//Pętla DO while - odwrotna do while
+let o = 0
+do {
+	o++
+	console.log(o)
+}while(o < 2 )
+
+console.log(`For of`)
+const numberOfs = [1,2,3,4,5]
+for (const numberOf of numberOfs){
+	console.log(numberOf * 3)
+}
+// 
+console.log(`To samo tylko zapisane zwykłym forem`)
+for (let l = 0; l < numberOfs.length; l++){
+	console.log(numberOfs[l] * 2)
+}
+
+console.log(`Odwołanie do konkretnego elementu w tablicy.Czyli 3 element razy 2 = 6`)
+for (let l = 0; l < numberOfs.length; l++){
+	console.log(numberOfs[2] * 2)
+}
+
