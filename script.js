@@ -389,3 +389,6 @@ for (const tabNumb of tab){
 		console.log(`%cliczba ${tabNumb} jest nieparzysta `, `background-color: lightgreen;color:black;`)
 	}
 }
+
+//METODY W TABLICACH
+console.log(`Metody w tablicach`)
