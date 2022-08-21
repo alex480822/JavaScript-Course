@@ -349,3 +349,16 @@ for (let l = 0; l < numberOfs.length; l++){
 	console.log(numberOfs[2] * 2)
 }
 
+//Zadanie pętla for
+const cities = [`Chicago`, `Warsaw`, `Poznan`, `Berlin`]
+
+for(u = 0; u < cities.length; u++){
+	console.log(`To miasto nazywa się: ${cities[u].toLocaleUpperCase()}`)
+}
+
+// Zadanie while
+let k = 0;
+while (k < 10){
+	k += 2
+	console.log(k)
+}
