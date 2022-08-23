@@ -392,3 +392,21 @@ for (const tabNumb of tab){
 
 //METODY W TABLICACH
 console.log(`Metody w tablicach`)
+ const numbersArray = [1,2,3,4,5]
+ //Unshift dodaje elementy na początku tablicy- przesuwa indexy
+ numbersArray.unshift(-1,0)
+ console.log(numbersArray)
+ 
+ //shift- usuwa pierwszy element z indexem 0
+ numbersArray.shift()
+ console.log(numbersArray)
+ 
+ //push dodaje elementy na końcu tablicy
+ numbersArray.push(`gold`, 123)
+ console.log(numbersArray)
+ 
+ //pop usuwa ostatni element tablicy
+ numbersArray.pop()
+ console.log(numbersArray)
+
+ 
