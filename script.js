@@ -409,4 +409,14 @@ console.log(`Metody w tablicach`)
  numbersArray.pop()
  console.log(numbersArray)
 
- 
+ //Methods task
+ const taskArray = [123,321,`abcd`,`efgh`]
+ console.log(taskArray)
+taskArray.unshift(0)
+console.log(taskArray)
+taskArray.pop()
+console.log(taskArray)
+taskArray.push(`ghi`, `jk`)
+console.log(taskArray)
+taskArray.shift()
+console.log(taskArray)
