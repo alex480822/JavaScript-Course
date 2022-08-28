@@ -407,6 +407,7 @@ console.log(`Metody w tablicach`)
  
  //pop usuwa ostatni element tablicy
  numbersArray.pop()
+ numbersArray.pop()
  console.log(numbersArray)
 
  //Methods task
@@ -420,3 +421,20 @@ taskArray.push(`ghi`, `jk`)
 console.log(taskArray)
 taskArray.shift()
 console.log(taskArray)
+
+
+console.log(`metoda map`)
+function multiply (xx) {
+	return xx * 2
+}
+
+//Metoda map- podobny do pętli, wykonuje jakiś kod na każdym elemencie tablicy. W nawiasach podajemy nazwę funkcji, której kod ma się wykonać na elementach tablicy
+//ZAWRACA NAM NOWĄ TABLICĘ
+const newNumbers = numbersArray.map(multiply)
+console.log(numbersArray)
+console.log(newNumbers)
+
+//concat- łączy dwie tablice ze sobą. Nie jest medotą destrukcyjną nie wpływa negatwywnie na oryginalną tablicę. 
+const kfc = [`k`, `f` , `c`]
+const newKfc = numbersArray.concat(kfc, 23, `test`)
+console.log(newKfc)
