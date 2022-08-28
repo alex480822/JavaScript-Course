@@ -438,3 +438,13 @@ console.log(newNumbers)
 const kfc = [`k`, `f` , `c`]
 const newKfc = numbersArray.concat(kfc, 23, `test`)
 console.log(newKfc)
+
+//spred operator- rozsmarowywuje tablice tak, że mamy dostęp do każdej właściwości. Dodatkowo może łączyć tablice np. 
+ console.log(`Spred operator`)
+ console.log(kfc)
+
+ const drinks = [`pepsi`, `sok`, `kawa`]
+ const meals = [`schabowy`, `spaghetti`, `zupa`]
+//Łączenie tablic spred'em 
+ const menu = [...drinks, ...meals]
+ console.log(menu)
