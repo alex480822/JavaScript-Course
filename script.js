@@ -457,11 +457,11 @@ console.log(menu);
 
 //Methods task
 const numbersTask = [0, 0, 1, 1, 2, 2, 2];
-const colorsTask = ['red', 'green', 'blue', true, 123]
-const cars = [123, true, 'audi', 'bmw', 'mercedes', 'ferrari', '🤷‍♂️', '👀']
+const colorsTask = ["red", "green", "blue", true, 123];
+const cars = [123, true, "audi", "bmw", "mercedes", "ferrari", "🤷‍♂️", "👀"];
 //slice- wycina kawałek tablicy- metoda niedestrukcyjna
 console.log(`slice`);
-const numbersTask2 = numbersTask.slice(0,2);
+const numbersTask2 = numbersTask.slice(0, 2);
 console.log(numbersTask2);
 
 console.log(`slice 2`);
@@ -469,28 +469,31 @@ const numbersTask3 = numbersTask.slice(-3);
 console.log(numbersTask3);
 //Splice- wycina kawałek tablicy- metoda destrukcyjna, zmienia zawrtość oryginalnej tablicy
 console.log(`splice randomstuff`);
-const randomStuff = colorsTask.splice(-2)
-console.log(randomStuff)
-console.log(colorsTask)
+const randomStuff = colorsTask.splice(-2);
+console.log(randomStuff);
+console.log(colorsTask);
 
-console.log(`Task cars`)
-const newCars = cars.splice(2,4)
+console.log(`Task cars`);
+const newCars = cars.splice(2, 4);
 console.log(newCars);
-console.log(`cars`)
-console.log(cars)
-
+console.log(`cars`);
+console.log(cars);
 
 //Task that filters table for even numbers
-//Filter- filtruje tablicę w poszukiwaniu żądanych wartości podanych w warunku w nawiasach. Dodatkowo można filtrować tablicę np. funkcją jak poniżej:  
-const numbers2 = [0,23,48,175,2,34,11]
+//Filter- filtruje tablicę w poszukiwaniu żądanych wartości podanych w warunku w nawiasach. Dodatkowo można filtrować tablicę np. funkcją jak poniżej:
+const numbers2 = [0, 23, 48, 175, 2, 34, 11];
 function numbers(x) {
-	return x % 2 === 0
+	return x % 2 === 0;
 }
 console.log(numbers2.filter(numbers));
-//forEach bierze tablice na którą nakłądamy metodę a następnie na każdym elemencie tablicy wykonywany jest kod. 
+//forEach bierze tablice na którą nakłądamy metodę a następnie na każdym elemencie tablicy wykonywany jest kod.
 console.log(`funkcja foreach`);
-numbers2.forEach(num => console.log(num * 5))
+numbers2.forEach((num) => console.log(num * 5));
 
 //includes sprawdza czy tablica zwiera konkretne elementy
 console.log(`metoda icloudes`);
 console.log(numbers2.includes(0));
+
+//indexof sprawdza index jakiegoś elementu w tablicy. Jeżeli zwróci wartość -1 to znaczy, że tablica nie przechowuje takiego elementu
+console.log(`indexOf`);
+console.log(numbers2.indexOf(34));
