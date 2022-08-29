@@ -318,133 +318,151 @@ for (let j = 0; j < colorsTable.length; j++) {
 }
 
 // Pętla while
-let p = 0
-while ( p < 4){
-	console.log(p)
-	p++ 
+let p = 0;
+while (p < 4) {
+	console.log(p);
+	p++;
 	//musi być inkrementacja bo w przeciwnym wypadku pętla będzie wykonywać się bez końca
 }
 
-console.log(`do while`)
+console.log(`do while`);
 //Pętla DO while - odwrotna do while
-let o = 0
+let o = 0;
 do {
-	o++
-	console.log(o)
-}while(o < 2 )
+	o++;
+	console.log(o);
+} while (o < 2);
 
-console.log(`For of`)
-const numberOfs = [1,2,3,4,5]
-for (const numberOf of numberOfs){
-	console.log(numberOf * 3)
+console.log(`For of`);
+const numberOfs = [1, 2, 3, 4, 5];
+for (const numberOf of numberOfs) {
+	console.log(numberOf * 3);
 }
-// 
-console.log(`To samo tylko zapisane zwykłym forem`)
-for (let l = 0; l < numberOfs.length; l++){
-	console.log(numberOfs[l] * 2)
+//
+console.log(`To samo tylko zapisane zwykłym forem`);
+for (let l = 0; l < numberOfs.length; l++) {
+	console.log(numberOfs[l] * 2);
 }
 
-console.log(`Odwołanie do konkretnego elementu w tablicy.Czyli 3 element razy 2 = 6`)
-for (let l = 0; l < numberOfs.length; l++){
-	console.log(numberOfs[2] * 2)
+console.log(
+	`Odwołanie do konkretnego elementu w tablicy.Czyli 3 element razy 2 = 6`
+);
+for (let l = 0; l < numberOfs.length; l++) {
+	console.log(numberOfs[2] * 2);
 }
 
 //Zadanie pętla for
-const cities = [`Chicago`, `Warsaw`, `Poznan`, `Berlin`]
+const cities = [`Chicago`, `Warsaw`, `Poznan`, `Berlin`];
 
-for(u = 0; u < cities.length; u++){
-	console.log(`To miasto nazywa się: ${cities[u].toLocaleUpperCase()}`)
+for (u = 0; u < cities.length; u++) {
+	console.log(`To miasto nazywa się: ${cities[u].toLocaleUpperCase()}`);
 }
 
 // Zadanie while
 let k = 0;
-while (k < 10){
-	k += 2
-	console.log(k)
+while (k < 10) {
+	k += 2;
+	console.log(k);
 }
-console.log(`Zadanie do while`)
-// Zadanie DO While 
+console.log(`Zadanie do while`);
+// Zadanie DO While
 let rr = 20;
-console.log(`Wartość przed pętą DO WHILE rr = ${rr}`)
-do{
-	rr -=3
-}while(rr > 0)
-console.log(`Wartość po wykonaniu pętli  DO WHILE rr = ${rr}`)
+console.log(`Wartość przed pętą DO WHILE rr = ${rr}`);
+do {
+	rr -= 3;
+} while (rr > 0);
+console.log(`Wartość po wykonaniu pętli  DO WHILE rr = ${rr}`);
 
 //Zadanie For of z tablicą
-console.log(`Zadanie for of- podzielone przez 5 `)
-const tableForOf = [5,8,10,23,48,60]
-for(const numbersTable of tableForOf){
-	numbersTable / 5
-	console.log(numbersTable)
+console.log(`Zadanie for of- podzielone przez 5 `);
+const tableForOf = [5, 8, 10, 23, 48, 60];
+for (const numbersTable of tableForOf) {
+	numbersTable / 5;
+	console.log(numbersTable);
 }
 
-console.log(`Sprawdzenie które liczby są parzyste a które nie`)
-const tab = [5,8,10,23,48,60]
-for (const tabNumb of tab){
-	if(tabNumb % 2 === 0){
-		console.log(`%cLiczba ${tabNumb} jest parzysta`, `background-color: gold; color: black;`)
-	}
-	else{
-		console.log(`%cliczba ${tabNumb} jest nieparzysta `, `background-color: lightgreen;color:black;`)
+console.log(`Sprawdzenie które liczby są parzyste a które nie`);
+const tab = [5, 8, 10, 23, 48, 60];
+for (const tabNumb of tab) {
+	if (tabNumb % 2 === 0) {
+		console.log(
+			`%cLiczba ${tabNumb} jest parzysta`,
+			`background-color: gold; color: black;`
+		);
+	} else {
+		console.log(
+			`%cliczba ${tabNumb} jest nieparzysta `,
+			`background-color: lightgreen;color:black;`
+		);
 	}
 }
 
 //METODY W TABLICACH
-console.log(`Metody w tablicach`)
- const numbersArray = [1,2,3,4,5]
- //Unshift dodaje elementy na początku tablicy- przesuwa indexy
- numbersArray.unshift(-1,0)
- console.log(numbersArray)
- 
- //shift- usuwa pierwszy element z indexem 0
- numbersArray.shift()
- console.log(numbersArray)
- 
- //push dodaje elementy na końcu tablicy
- numbersArray.push(`gold`, 123)
- console.log(numbersArray)
- 
- //pop usuwa ostatni element tablicy
- numbersArray.pop()
- numbersArray.pop()
- console.log(numbersArray)
+console.log(`Metody w tablicach`);
+const numbersArray = [1, 2, 3, 4, 5];
+//Unshift dodaje elementy na początku tablicy- przesuwa indexy
+numbersArray.unshift(-1, 0);
+console.log(numbersArray);
 
- //Methods task
- const taskArray = [123,321,`abcd`,`efgh`]
- console.log(taskArray)
-taskArray.unshift(0)
-console.log(taskArray)
-taskArray.pop()
-console.log(taskArray)
-taskArray.push(`ghi`, `jk`)
-console.log(taskArray)
-taskArray.shift()
-console.log(taskArray)
+//shift- usuwa pierwszy element z indexem 0
+numbersArray.shift();
+console.log(numbersArray);
 
+//push dodaje elementy na końcu tablicy
+numbersArray.push(`gold`, 123);
+console.log(numbersArray);
 
-console.log(`metoda map`)
-function multiply (xx) {
-	return xx * 2
+//pop usuwa ostatni element tablicy
+numbersArray.pop();
+numbersArray.pop();
+console.log(numbersArray);
+
+//Methods task
+const taskArray = [123, 321, `abcd`, `efgh`];
+console.log(taskArray);
+taskArray.unshift(0);
+console.log(taskArray);
+taskArray.pop();
+console.log(taskArray);
+taskArray.push(`ghi`, `jk`);
+console.log(taskArray);
+taskArray.shift();
+console.log(taskArray);
+
+console.log(`metoda map`);
+function multiply(xx) {
+	return xx * 2;
 }
 
 //Metoda map- podobny do pętli, wykonuje jakiś kod na każdym elemencie tablicy. W nawiasach podajemy nazwę funkcji, której kod ma się wykonać na elementach tablicy
 //ZAWRACA NAM NOWĄ TABLICĘ
-const newNumbers = numbersArray.map(multiply)
-console.log(numbersArray)
-console.log(newNumbers)
+const newNumbers = numbersArray.map(multiply);
+console.log(numbersArray);
+console.log(newNumbers);
 
-//concat- łączy dwie tablice ze sobą. Nie jest medotą destrukcyjną nie wpływa negatwywnie na oryginalną tablicę. 
-const kfc = [`k`, `f` , `c`]
-const newKfc = numbersArray.concat(kfc, 23, `test`)
-console.log(newKfc)
+//concat- łączy dwie tablice ze sobą. Nie jest medotą destrukcyjną nie wpływa negatwywnie na oryginalną tablicę.
+const kfc = [`k`, `f`, `c`];
+const newKfc = numbersArray.concat(kfc, 23, `test`);
+console.log(newKfc);
 
-//spred operator- rozsmarowywuje tablice tak, że mamy dostęp do każdej właściwości. Dodatkowo może łączyć tablice np. 
- console.log(`Spred operator`)
- console.log(kfc)
+//spred operator- rozsmarowywuje tablice tak, że mamy dostęp do każdej właściwości. Dodatkowo może łączyć tablice np.
+console.log(`Spred operator`);
+console.log(kfc);
 
- const drinks = [`pepsi`, `sok`, `kawa`]
- const meals = [`schabowy`, `spaghetti`, `zupa`]
-//Łączenie tablic spred'em 
- const menu = [...drinks, ...meals]
- console.log(menu)
+const drinks = [`pepsi`, `sok`, `kawa`];
+const meals = [`schabowy`, `spaghetti`, `zupa`];
+//Łączenie tablic spred'em
+const menu = [...drinks, ...meals];
+console.log(menu);
+
+//Methods task
+const numbersTask = [0, 0, 1, 1, 2, 2, 2];
+//slice- wycina kawałek tablicy- metoda niedestrukcyjna
+console.log(`slice`);
+const numbersTask2 = numbersTask.slice(2);
+console.log(numbersTask2);
+console.log(`slice 2`);
+const numbersTask3 = numbersTask.slice(-3);
+console.log(numbersTask3);
+//Splice- wycina kawałek tablicy- metoda destrukcyjna
+console.log(`splice2`);
