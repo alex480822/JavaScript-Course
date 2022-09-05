@@ -499,10 +499,47 @@ console.log(`indexOf`);
 console.log(numbers2.indexOf(34));
 
 //Zadanie
-const letterS = [`c`, `d`]
+const letterS = [`c`, `d`];
 
-letterS.unshift(`a`, `b`)
-letterS.push(`e`, `f`)
+letterS.unshift(`a`, `b`);
+letterS.push(`e`, `f`);
 console.log(letterS);
 
 console.log(letterS.includes(`c`));
+
+//Zadanie
+const numbersT = [1, 2, 3];
+const foodT = [`Hot Dog`, `Humburger`, `pizza`];
+
+const foodNumbersT = numbersT.concat(foodT);
+const foodNumbersTspread = [...numbersT, ...foodT];
+console.log(foodNumbersT);
+console.log(foodNumbersTspread);
+
+// Task 2
+const Arnumbers = [1, 2, 15, 26, 48];
+
+//Metoda map
+function MapNumber(xx) {
+	return xx * 5;
+}
+const NewMapNumber = Arnumbers.map(MapNumber);
+console.log(NewMapNumber);
+
+//Opcja 1- właściwa
+// for(const number of NewMapNumber){
+// 	if(number % 2 === 0){
+// 		console.log(`Liczba przysta: ${number}`);
+// 	}else{
+// 		console.log(`Liczba nieprzysta: ${number}`);
+// 	}
+// }
+
+//Druga opcja z pętką for
+for (let i = 0; i < NewMapNumber.length; i++) {
+	if (NewMapNumber[i] % 2 === 0) {
+		console.log(`Liczba przysta: ${NewMapNumber[i]}`);
+	} else {
+		console.log(`Liczba nieparzysta: ${NewMapNumber[i]}`);
+	}
+}
