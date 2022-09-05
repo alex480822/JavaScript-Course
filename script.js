@@ -497,3 +497,12 @@ console.log(numbers2.includes(0));
 //indexof sprawdza index jakiegoś elementu w tablicy. Jeżeli zwróci wartość -1 to znaczy, że tablica nie przechowuje takiego elementu
 console.log(`indexOf`);
 console.log(numbers2.indexOf(34));
+
+//Zadanie
+const letterS = [`c`, `d`]
+
+letterS.unshift(`a`, `b`)
+letterS.push(`e`, `f`)
+console.log(letterS);
+
+console.log(letterS.includes(`c`));
