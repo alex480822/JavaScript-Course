@@ -569,3 +569,27 @@ console.log(ArColors)
 for (let i = 0; i < ArColors.length; i++) {
 	console.log(`Mój ulubiony kolor to: ${ArColors[i].charAt(0).toUpperCase() + ArColors[i].slice(1)}`);
 }
+
+//Powyższa pętla przerobiona na for of
+
+//Zadanie- za pomocą metody na stringu zrób z niego tablicę i przypisz do nowej zmennej.
+let carsTask = `Audi , Mercedes , BMW , Nissan , Dodge`
+console.log(carsTask);
+const carsTaskNew = carsTask.split(`,`)
+console.log(carsTaskNew);
+
+// if(carsTaskNew.length > 3){
+// 	console.log(`Jest OK.`);
+// }else{
+// 	console.log(`Nie jest OK`);
+// }
+
+for (const a of carsTask) {
+	if (a.includes('Audi')) {
+		console.log(`jest`);
+		console.log(carsTask);
+	}else{
+		console.log(`nie `);
+	}
+	
+}
