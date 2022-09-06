@@ -543,3 +543,29 @@ for (let i = 0; i < NewMapNumber.length; i++) {
 		console.log(`Liczba nieparzysta: ${NewMapNumber[i]}`);
 	}
 }
+
+console.log(`test`);
+// for (const item of Arnumbers) {
+// 	if (item % 2 === 0) {
+// 		console.log(`liczba jest parzysta: ${item}`);
+// 	}else{
+// 		console.log(`Liczba jest nieparzysta: ${item}`);
+// 	}
+// }
+
+for (let i = 0; i < Arnumbers.length; i++) {
+	if (Arnumbers[i] % 2 === 0) {
+		console.log(`Liczna parzysta : ${Arnumbers[i]}`);
+	} else {
+		console.log(`Liczba jest nieparzysta : ${Arnumbers[i]}`);
+	}
+}
+
+const ArColors = [`niebieski`]
+ArColors.unshift(`zielony`)
+ArColors.push(`pomarańczowy`)
+console.log(ArColors)
+
+for (let i = 0; i < ArColors.length; i++) {
+	console.log(`Mój ulubiony kolor to: ${ArColors[i].charAt(0).toUpperCase() + ArColors[i].slice(1)}`);
+}
