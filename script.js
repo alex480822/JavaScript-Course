@@ -573,7 +573,7 @@ for (let i = 0; i < ArColors.length; i++) {
 //Powyższa pętla przerobiona na for of
 
 //Zadanie- za pomocą metody na stringu zrób z niego tablicę i przypisz do nowej zmennej.
-let carsTask = `Audi , Mercedes , BMW , Nissan , Dodge`
+let carsTask = `Audi,Mercedes,BMW,Nissan,Dodge`
 console.log(carsTask);
 const carsTaskNew = carsTask.split(`,`)
 console.log(carsTaskNew);
@@ -583,13 +583,15 @@ console.log(carsTaskNew);
 // }else{
 // 	console.log(`Nie jest OK`);
 // }
+// Wersja skrócona
+carsTaskNew.length > 3 ? console.log(`Jest OK- wersja skrócona`) : console.log(`Nie jest OK- wersja skrócona`); 
 
-for (const a of carsTask) {
-	if (a.includes('Audi')) {
-		console.log(`jest`);
-		console.log(carsTask);
-	}else{
-		console.log(`nie `);
-	}
-	
+
+console.log(`Podpunkt 4`)
+if (carsTaskNew.includes(`Audi`)){ 
+	carsTaskNew.push(`Lamborghini`)
+}else{
+	carsTaskNew.pop()
 }
+console.log(carsTaskNew);
+
