@@ -561,21 +561,25 @@ for (let i = 0; i < Arnumbers.length; i++) {
 	}
 }
 
-const ArColors = [`niebieski`]
-ArColors.unshift(`zielony`)
-ArColors.push(`pomarańczowy`)
-console.log(ArColors)
+const ArColors = [`niebieski`];
+ArColors.unshift(`zielony`);
+ArColors.push(`pomarańczowy`);
+console.log(ArColors);
 
 for (let i = 0; i < ArColors.length; i++) {
-	console.log(`Mój ulubiony kolor to: ${ArColors[i].charAt(0).toUpperCase() + ArColors[i].slice(1)}`);
+	console.log(
+		`Mój ulubiony kolor to: ${
+			ArColors[i].charAt(0).toUpperCase() + ArColors[i].slice(1)
+		}`
+	);
 }
 
 //Powyższa pętla przerobiona na for of
 
 //Zadanie- za pomocą metody na stringu zrób z niego tablicę i przypisz do nowej zmennej.
-let carsTask = `Audi,Mercedes,BMW,Nissan,Dodge`
+let carsTask = `Audi,Mercedes,BMW,Nissan,Dodge`;
 console.log(carsTask);
-const carsTaskNew = carsTask.split(`,`)
+const carsTaskNew = carsTask.split(`,`);
 console.log(carsTaskNew);
 
 // if(carsTaskNew.length > 3){
@@ -584,14 +588,66 @@ console.log(carsTaskNew);
 // 	console.log(`Nie jest OK`);
 // }
 // Wersja skrócona
-carsTaskNew.length > 3 ? console.log(`Jest OK- wersja skrócona`) : console.log(`Nie jest OK- wersja skrócona`); 
+carsTaskNew.length > 3
+	? console.log(`Jest OK- wersja skrócona`)
+	: console.log(`Nie jest OK- wersja skrócona`);
 
-
-console.log(`Podpunkt 4`)
-if (carsTaskNew.includes(`Audi`)){ 
-	carsTaskNew.push(`Lamborghini`)
-}else{
-	carsTaskNew.pop()
+console.log(`Podpunkt 4`);
+if (carsTaskNew.includes(`Audi`)) {
+	carsTaskNew.push(`Lamborghini`);
+} else {
+	carsTaskNew.pop();
 }
 console.log(carsTaskNew);
 
+//FUNKCJE
+function test(params) {
+	console.log(`Cześć jestem funkcją`);
+}
+test();
+
+//wyrażenie funkcyjne bez hojstingu
+const helloWord = function () {
+	console.log(`Cześć 123 bez hojstingu`);
+};
+helloWord();
+
+//Funkcja z argumentami
+function add(parametr) {
+	console.log(`Podany argument to: ` + parametr);
+}
+add(`fajny tekst`);
+
+function add2(x, y) {
+	console.log(x, y);
+	console.log(`Dodawaneie liczb:`, x, `,`, y, `wynosi:`, x + y);
+}
+add2(2, 3);
+function add3(x, y) {
+	if (x < y) return;
+	console.log(x + y);
+}
+add3(10, 5);
+
+function task1(name, number) {
+	console.log(`Cześć mam na imię ${name} i mam ${number} lat`);
+}
+task1(`Adrian`, 6);
+
+//Funkcja anonimowa. bardzo problematyczna bo nie można się do niej odwołać w dalszej części kodu.
+const heading = document.querySelector(`h1`);
+heading.addEventListener(`click`, function () {
+	console.log(`Kliknięto mnie:`);
+});
+
+//Funkcja strzałkowa
+const arrowFunction = () => {
+	//Tak wygląda funkcja strzałkowa
+};
+
+const arrowFunction2 = (name, age) => {
+	console.log(`Moje imię to: ${name}`);
+};
+arrowFunction2(`Kasia`);
+
+const addArrow = (num1,num2) => num1 * num2
