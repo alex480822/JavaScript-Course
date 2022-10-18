@@ -650,4 +650,11 @@ const arrowFunction2 = (name, age) => {
 };
 arrowFunction2(`Kasia`);
 
-const addArrow = (num1,num2) => num1 * num2
+const addArrow = (num1, num2) => num1 * num2;
+
+const days = [`Poniedziałek`, `Wtorek`, `Środa`];
+const days1 = days.forEach((day) => console.log(day));
+
+//ZAbawa z funkcją strzałkową
+const fun = (brand, number) =>
+	console.log(`Marka telefonu to ${brand} a ilość modeli to ${number}`);
