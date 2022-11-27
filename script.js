@@ -658,3 +658,27 @@ const days1 = days.forEach((day) => console.log(day));
 //ZAbawa z funkcją strzałkową
 const fun = (brand, number) =>
 	console.log(`Marka telefonu to ${brand} a ilość modeli to ${number}`);
+
+//Cześć imię jak się masz?     - domyślne parametry funkcji
+const hello = (name = `drogi użytkowniku`) => console.log(`Cześć ${name}, jak się masz?`);
+hello()
+hello(`Kasia`)
+
+const add22 = (x = 10, y = 5) => console.log(x+y);
+add22(20,10)
+
+//Spread- działa na tablicach- rozsmarowywuje je.
+const arr22 = [1,2,3,4]
+console.log(arr22);
+console.log(...arr22);
+
+//REST- działa na funkcjach. Wypisz X,Y, a pod Z dodstaw wszystko co pozostało w tablicy i utwórz nową.
+const numbers22 = (x,y,...z) => {
+	console.log(x,y,z);	
+	console.log(x);
+	console.log(y);
+	console.log(z);
+	console.log(z.map(el => el *2));
+}
+numbers22(12,468,468,4,9813,2323,2323,121,65)
+

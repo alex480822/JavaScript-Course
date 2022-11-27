@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: royalblue;
+  position: relative;
+  background-color: #06283D;
   color: white;
 }
 
@@ -24,27 +25,27 @@ body {
   position: relative;
   height: 25vh;
   width: 100%;
-  background-color: black;
+  margin-bottom: 20%;
+  background-color: #256D85;
 }
 
 .header__title {
-  color: lightcoral;
+  color: #fff;
   text-align: center;
 }
 
 .main {
   position: relative;
-  margin-top: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 50vh;
   width: 100%;
-  background-color: lightblue;
+  background-color: #256D85;
 }
 
 .main__dreams h2 {
-  color: black;
+  color: #eee;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
