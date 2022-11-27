@@ -520,6 +520,7 @@ console.log(foodNumbersTspread);
 const Arnumbers = [1, 2, 15, 26, 48];
 
 //Metoda map
+console.log(`----- metoda map ----`);
 function MapNumber(xx) {
 	return xx * 5;
 }
@@ -601,6 +602,7 @@ if (carsTaskNew.includes(`Audi`)) {
 console.log(carsTaskNew);
 
 //FUNKCJE
+console.log(`----- Funkcje ----`);
 function test(params) {
 	console.log(`Cześć jestem funkcją`);
 }
@@ -635,12 +637,14 @@ function task1(name, number) {
 task1(`Adrian`, 6);
 
 //Funkcja anonimowa. bardzo problematyczna bo nie można się do niej odwołać w dalszej części kodu.
+console.log(`----- Funkcja Anonimowa ----`);
 const heading = document.querySelector(`h1`);
 heading.addEventListener(`click`, function () {
 	console.log(`Kliknięto mnie:`);
 });
 
 //Funkcja strzałkowa
+console.log(`----- Funkcja strzałkowa ----`);
 const arrowFunction = () => {
 	//Tak wygląda funkcja strzałkowa
 };
@@ -660,25 +664,68 @@ const fun = (brand, number) =>
 	console.log(`Marka telefonu to ${brand} a ilość modeli to ${number}`);
 
 //Cześć imię jak się masz?     - domyślne parametry funkcji
-const hello = (name = `drogi użytkowniku`) => console.log(`Cześć ${name}, jak się masz?`);
-hello()
-hello(`Kasia`)
+const hello = (name = `drogi użytkowniku`) =>
+	console.log(`Cześć ${name}, jak się masz?`);
+hello();
+hello(`Kasia`);
 
-const add22 = (x = 10, y = 5) => console.log(x+y);
-add22(20,10)
+const add22 = (x = 10, y = 5) => console.log(x + y);
+add22(20, 10);
 
 //Spread- działa na tablicach- rozsmarowywuje je.
-const arr22 = [1,2,3,4]
+console.log(`----- Spred ----`);
+const arr22 = [1, 2, 3, 4];
 console.log(arr22);
 console.log(...arr22);
 
 //REST- działa na funkcjach. Wypisz X,Y, a pod Z dodstaw wszystko co pozostało w tablicy i utwórz nową.
-const numbers22 = (x,y,...z) => {
-	console.log(x,y,z);	
+console.log(`----- Rest ----`);
+const numbers22 = (x, y, ...z) => {
+	console.log(x, y, z);
 	console.log(x);
 	console.log(y);
 	console.log(z);
-	console.log(z.map(el => el *2));
-}
-numbers22(12,468,468,4,9813,2323,2323,121,65)
+	console.log(z.map((el) => el * 2));
+};
+numbers22(12, 468, 468, 4, 9813, 2323, 2323, 121, 65);
 
+//Ponownie foreach, callback
+console.log(`----- ForEach ----`);
+const numbers55 = [0.5, 4, `abc`];
+const names55 = [`Lisa`, `Lily`, `Adam`, `Przemek`];
+
+numbers55.forEach((num) => console.log(num));
+//Nie stosujemy foreach bo on nie zwraca elementów. Stosujemy map.
+const bigNames = names55.map((name) => name.toUpperCase());
+console.log(bigNames);
+
+//Callback
+console.log(`----- Callback ----`);
+const showBigNames = (name) => {
+	console.log(name.toUpperCase());
+};
+names55.forEach(showBigNames);
+//Skrócony zapis powyższej funkcji
+console.log(` skrócony zapis `)
+names55.forEach((el) => console.log(el.toUpperCase()));
+
+//Zadanie z funkcji 68.
+console.log(`----- Zadanie 68 z funkcji ----`);
+
+let score;
+const even68 = (score) => {
+	console.log(`Liczba parzysta`);
+};
+const odd68 = (score) => {
+	console.log(`Liczba nieparzysta`);
+};
+const add68 = (x, y) => {
+	score = x + y;
+	if (score % 2 === 0) {
+		even68();
+	} else {
+		odd68();
+	}
+};
+add68(2, 4);
+console.log(`Aktualna wartość liczby score(x+y): ${score}`);
