@@ -139,18 +139,29 @@ console.log(`Negacja odwaraca działąnie: ${10 !== "10"}`);
 console.log(`Negacja odwaraca działąnie: ${"10" !== "10"}`);
 
 // i
+console.log(`-------------------------------`);
+console.log(`---------	i 	---------`);
+console.log(`-------------------------------`);
 if (true && false) {
 	console.log("Like");
 } else {
 	console.log("dislike");
 }
+
 //lub
+console.log(`-------------------------------`);
+console.log(`---------	lub 	---------`);
+console.log(`-------------------------------`);
 if (true || false) {
 	console.log("Like");
 } else {
 	console.log("dislike");
 }
+
 // ! zaprzeczenie
+console.log(`-------------------------------`);
+console.log(`---------	! 	---------`);
+console.log(`-------------------------------`);
 if (!true) {
 	console.log("Like");
 } else {
@@ -158,6 +169,9 @@ if (!true) {
 }
 
 //instrukcja warunkowa if
+console.log(`-------------------------------`);
+console.log(`---------instrukcja warunkowa if ---------`);
+console.log(`-------------------------------`);
 console.log("---");
 const color = "blue";
 if (color == "blue") {
@@ -171,7 +185,10 @@ if (color == "blue") {
 }
 
 //Zagnieżdżona instrukcaj if
-console.log("---");
+console.log(`-------------------------------`);
+console.log(`---------Zagnieżdżona instrukcaj if ---------`);
+console.log(`-------------------------------`);
+
 const pass = "qwqweeq22wwe!";
 if (pass.length > 10 && pass.includes("!")) {
 	console.log("masz bardzo dobre hasło");
@@ -182,8 +199,10 @@ if (pass.length > 10 && pass.includes("!")) {
 }
 
 // SWITCH
+console.log(`-------------------------------`);
+console.log(`--------- Switch ---------`);
+console.log(`-------------------------------`);
 
-console.log("---");
 const day = "piątek";
 
 switch (day) {
@@ -300,6 +319,10 @@ if (f >= 100) {
 console.log(textF.toUpperCase());
 
 // Pętla for
+console.log(`-------------------------------`);
+console.log(`---------Pętla for ---------`);
+console.log(`-------------------------------`);
+
 for (let i = 0; i < 6; i++) {
 	console.log(i);
 }
@@ -325,8 +348,10 @@ while (p < 4) {
 	//musi być inkrementacja bo w przeciwnym wypadku pętla będzie wykonywać się bez końca
 }
 
-console.log(`do while`);
 //Pętla DO while - odwrotna do while
+console.log(`-------------------------------`);
+console.log(`--------- Pętla DO While ---------`);
+console.log(`-------------------------------`);
 let o = 0;
 do {
 	o++;
@@ -398,7 +423,9 @@ for (const tabNumb of tab) {
 }
 
 //METODY W TABLICACH
-console.log(`Metody w tablicach`);
+console.log(`-------------------------------`);
+console.log(`----- Metody w tablicach -----`);
+console.log(`-------------------------------`);
 const numbersArray = [1, 2, 3, 4, 5];
 //Unshift dodaje elementy na początku tablicy- przesuwa indexy
 numbersArray.unshift(-1, 0);
@@ -602,7 +629,9 @@ if (carsTaskNew.includes(`Audi`)) {
 console.log(carsTaskNew);
 
 //FUNKCJE
+console.log(`-------------------------------`);
 console.log(`----- Funkcje ----`);
+console.log(`-------------------------------`);
 function test(params) {
 	console.log(`Cześć jestem funkcją`);
 }
@@ -637,14 +666,18 @@ function task1(name, number) {
 task1(`Adrian`, 6);
 
 //Funkcja anonimowa. bardzo problematyczna bo nie można się do niej odwołać w dalszej części kodu.
+console.log(`-------------------------------`);
 console.log(`----- Funkcja Anonimowa ----`);
+console.log(`-------------------------------`);
 const heading = document.querySelector(`h1`);
 heading.addEventListener(`click`, function () {
 	console.log(`Kliknięto mnie:`);
 });
 
 //Funkcja strzałkowa
+console.log(`-------------------------------`);
 console.log(`----- Funkcja strzałkowa ----`);
+console.log(`-------------------------------`);
 const arrowFunction = () => {
 	//Tak wygląda funkcja strzałkowa
 };
@@ -673,13 +706,17 @@ const add22 = (x = 10, y = 5) => console.log(x + y);
 add22(20, 10);
 
 //Spread- działa na tablicach- rozsmarowywuje je.
+console.log(`-------------------------------`);
 console.log(`----- Spred ----`);
+console.log(`-------------------------------`);
 const arr22 = [1, 2, 3, 4];
 console.log(arr22);
 console.log(...arr22);
 
 //REST- działa na funkcjach. Wypisz X,Y, a pod Z dodstaw wszystko co pozostało w tablicy i utwórz nową.
+console.log(`-------------------------------`);
 console.log(`----- Rest ----`);
+console.log(`-------------------------------`);
 const numbers22 = (x, y, ...z) => {
 	console.log(x, y, z);
 	console.log(x);
@@ -700,24 +737,28 @@ const bigNames = names55.map((name) => name.toUpperCase());
 console.log(bigNames);
 
 //Callback
+console.log(`-------------------------------`);
 console.log(`----- Callback ----`);
+console.log(`-------------------------------`);
 const showBigNames = (name) => {
 	console.log(name.toUpperCase());
 };
 names55.forEach(showBigNames);
 //Skrócony zapis powyższej funkcji
-console.log(` skrócony zapis `)
+console.log(` skrócony zapis `);
 names55.forEach((el) => console.log(el.toUpperCase()));
 
 //Zadanie z funkcji 68.
+console.log(`-------------------------------`);
 console.log(`----- Zadanie 68 z funkcji ----`);
+console.log(`-------------------------------`);
 
 let score;
-const even68 = (score) => {
-	console.log(`Liczba parzysta`);
+const even68 = () => {
+	console.log(`Liczba ${score} jest parzysta`);
 };
-const odd68 = (score) => {
-	console.log(`Liczba nieparzysta`);
+const odd68 = () => {
+	console.log(`Liczba ${score} nieparzysta`);
 };
 const add68 = (x, y) => {
 	score = x + y;
@@ -727,5 +768,73 @@ const add68 = (x, y) => {
 		odd68();
 	}
 };
+//zapis skrócony powyższego if'a   (score % 2 === 0) ? even68() : odd68()
 add68(2, 4);
 console.log(`Aktualna wartość liczby score(x+y): ${score}`);
+
+const even688 = (num) => {
+	console.log(`parzysta ${num} - 688`);
+};
+const odd688 = (num) => {
+	console.log(`nieparzysta ${num} -  688`);
+};
+const add688 = (x, y) => {
+	const score688 = x + y;
+	score688 % 2 === 0 ? even688(score688) : odd688(score688);
+};
+add688(2, 21);
+
+// Zadanie 69 Konwerter temperatury F na C
+console.log(`-------------------------------`);
+console.log(`----- Zadanie 69 konwerter ----`);
+console.log(`-------------------------------`);
+let celsius;
+let temp;
+const fahrenheit = (x) => {
+	celsius = x;
+	temp = x * 1.8 + 32;
+	console.log(`Temperatura w F ${temp}`);
+};
+fahrenheit(20);
+
+//Zadanie callback i forecach
+console.log(`-------------------------------`);
+console.log(`----- Zadanie 70 callback i forecach ----`);
+console.log(`-------------------------------`);
+const num70 = 10;
+const numbers70 = [];
+for (let i = 0; i < num70; i++) {
+	numbers70.push(i);
+}
+console.log(`Zawartość tablicy numbers70 : [ ${numbers70} ]`);
+
+const check70 = (num) => {
+	if (num % 3 === 0 && num !== 0) {
+		console.log(`${num} jest podzielne przez 3`);
+	} else {
+		console.log(`${num} nie jest podzielne przez 3 lub ${num} = 0`);
+	}
+};
+//Przeprowadzenie funkcji check70 po całej tablicy numbers70
+numbers70.forEach(check70);
+
+console.log(`-------------------------------`);
+console.log(`----- Pobieranie elementów na stronie cz.1 starsza----`);
+console.log(`-------------------------------`);
+
+//getElementById
+//Tworzymy zmienną. Poszukujemy cały dokument i przypisujemy do niej zawartość elementu i id "item"
+const test71 = document.getElementById("item");
+console.log(test71);
+
+//getElementsByTagName- obiekt tablicopodobny
+const test72 = document.getElementsByTagName("ul");
+console.log(test72);
+
+//getRlementsByClassName
+const test73 = document.getElementsByClassName("test");
+console.log(test73);
+
+console.log(`-------------------------------`);
+console.log(`----- Pobieranie elementów na stronie cz.2 nowsza ----`);
+console.log(`-------------------------------`);

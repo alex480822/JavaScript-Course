@@ -39,13 +39,37 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   background-color: #256D85;
+}
+
+.main__freespace {
+  width: 100%;
+  padding: 25px;
+  background-color: #06283D;
+}
+
+.main__dreams {
+  padding: 50px;
 }
 
 .main__dreams h2 {
   color: #eee;
   text-align: center;
+}
+
+.main__task {
+  padding: 50px;
+}
+
+.main__task-list {
+  text-align: left;
+  color: #eebdd1;
+  line-height: 25px;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */

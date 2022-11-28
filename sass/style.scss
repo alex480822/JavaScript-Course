@@ -9,35 +9,48 @@ body {
 	background-color: $main-color;
 	color: white;
 }
-.section{
+.section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.header{
+.header {
 	position: relative;
 	height: 25vh;
 	width: 100%;
 	margin-bottom: 20%;
 	background-color: $secondary-color;
-	&__title{
+	&__title {
 		color: $pure-white;
 		text-align: center;
-
 	}
 }
-.main{
+.main {
 	position: relative;
 	display: flex;
-	height: 50vh;
+	flex-direction: column;
 	width: 100%;
 	background-color: $secondary-color;
-	&__dreams{
-		h2{
+	&__freespace {
+		width: 100%;
+		padding: 25px;
+		background-color: $main-color;
+	}
+	&__dreams {
+		padding: 50px;
+		h2 {
 			color: $light-white;
 			text-align: center;
-
+		}
+	}
+	&__task {
+		padding: 50px;
+		&-list {
+			text-align: left;
+			color: rgb(238, 189, 209);
+			line-height: 25px;
+			list-style-type: none;
 		}
 	}
 }
