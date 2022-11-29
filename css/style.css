@@ -9,22 +9,8 @@ body {
   color: white;
 }
 
-.section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .header {
-  position: relative;
   height: 25vh;
-  width: 100%;
   margin-bottom: 20%;
   background-color: #256D85;
 }
@@ -34,42 +20,80 @@ body {
   text-align: center;
 }
 
-.main {
-  position: relative;
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  background-color: #256D85;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 10px solid #06283D;
 }
 
-.main__freespace {
-  width: 100%;
+.freespace {
   padding: 25px;
   background-color: #06283D;
 }
 
-.main__dreams {
+.main {
+  background-color: #256D85;
+}
+
+.main__fun {
+  height: 45vh;
   padding: 50px;
 }
 
-.main__dreams h2 {
+.main__fun border
+h2 {
   color: #eee;
   text-align: center;
 }
 
-.main__task {
-  padding: 50px;
+.main__task1, .main__task2 {
+  padding: 30px;
+  line-height: 25px;
 }
 
-.main__task-list {
+.main__task1-list {
   text-align: left;
-  color: #eebdd1;
-  line-height: 25px;
   list-style-type: none;
+}
+
+.main__task1 h2, .main__task2 h2 {
+  position: relative;
+  padding: 15px;
+  color: goldenrod;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.main__task1 h2::before, .main__task2 h2::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 40%;
+  left: 10%;
+  top: 0%;
+  border-bottom: 1px solid #fff;
+}
+
+.main__task1 h2::after, .main__task2 h2::after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 15%;
+  right: 10%;
+  bottom: -5%;
+  border-bottom: 1px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */

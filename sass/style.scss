@@ -9,16 +9,8 @@ body {
 	background-color: $main-color;
 	color: white;
 }
-.section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .header {
-	position: relative;
 	height: 25vh;
-	width: 100%;
 	margin-bottom: 20%;
 	background-color: $secondary-color;
 	&__title {
@@ -26,31 +18,66 @@ body {
 		text-align: center;
 	}
 }
-.main {
-	position: relative;
+.section {
 	display: flex;
+	padding: 20px;
 	flex-direction: column;
-	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 10px solid $main-color;
+}
+.freespace {
+	padding: 25px;
+	background-color: $main-color;
+}
+.main {
 	background-color: $secondary-color;
-	&__freespace {
-		width: 100%;
-		padding: 25px;
-		background-color: $main-color;
-	}
-	&__dreams {
+	&__fun {
+		height: 45vh;
 		padding: 50px;
+		border
 		h2 {
 			color: $light-white;
 			text-align: center;
 		}
 	}
-	&__task {
-		padding: 50px;
+	&__task1,
+	&__task2 {
+		padding: 30px;
+		line-height: 25px;
+	}
+	&__task1 {
 		&-list {
 			text-align: left;
-			color: rgb(238, 189, 209);
-			line-height: 25px;
 			list-style-type: none;
+		}
+	}
+	&__task1, &__task2 {
+		h2 {
+			position: relative;
+			padding: 15px;
+			color:$fifth-color;
+			text-align: center;
+			margin: 20px 0px;
+		}
+		h2::before{
+			position: absolute;
+			content: '';
+			height: 1px;
+			width: 40%;
+			left: 10%;
+			top: 0%;
+			border-bottom: 1px solid $pure-white;
+		}
+		h2::after{
+			position: absolute;
+			content: '';
+			height: 10px;
+			width: 15%;
+			right: 10%;
+			bottom: -5%;
+			border-bottom: 1px solid $pure-white;
 		}
 	}
 }

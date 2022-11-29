@@ -838,3 +838,43 @@ console.log(test73);
 console.log(`-------------------------------`);
 console.log(`----- Pobieranie elementów na stronie cz.2 nowsza ----`);
 console.log(`-------------------------------`);
+
+//querySelector (ES6) - nie wspiera żywych kolekcji czyli qSA. getElementsByTagName/ Class Name wpiera
+//Jeśli dodajemy jakieś treści na stronę za pomocą JS to dodajemy je dynamicznie. Nie mamy do niech dostępu za pomocą querySelector'ów, gdyz nie wspiera żywych kolekcji. Możemy dostać się do nich tylko za pomocą getElements..
+const test74 =  document.querySelector("#item")
+const test75 =  document.querySelector("ul li")
+console.log(test74);
+console.log(test75);
+
+console.log(`--- szukanie listy ul, przypisywanie jej do zmiennej i wykorzystywanie tego dalejw poszukiwaniu list li `);
+const ulList = document.querySelector("ul")
+console.log(ulList);
+const liList = ulList.querySelector("li:nth-child(6)")
+console.log(liList);
+
+
+//querySelectorALL (ES6) NodeList
+console.log(`----- querySelectorALL ----`);
+const test76 = document.querySelectorAll("li.test")
+console.log(test76);
+
+//Zadanie z queryselector
+// console.log(`Zadanie`);
+// const heading70 = document.querySelector("h1:nth-child(3)")
+// console.log(heading70);
+// const task70 = document.querySelectorAll("p")
+// console.log(task70);
+// const task71 = document.querySelectorAll(".test2")
+// console.log(test71);
+// const task72 = test71.querySelector("#test3")
+// console.log(test72);
+
+console.log(`-------------------------------`);
+console.log(`----- Tworzenie i dodawanie elementów na stronie ----`);
+console.log(`-------------------------------`);
+
+const ulList2 = document.createElement('ul')
+const liItem2 = document.createElement('li')
+liItem2.textContent = `cześć`
+document.body.appendChild(ulList2)
+ulList2.appendChild(liItem2)
