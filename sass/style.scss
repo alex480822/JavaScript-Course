@@ -31,13 +31,20 @@ body {
 	padding: 25px;
 	background-color: $main-color;
 }
+.btn {
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid $fourth-color;
+	border-radius: 10px;
+	color: $fifth-color;
+	cursor: pointer;
+}
 .main {
 	background-color: $secondary-color;
 	&__fun {
 		height: 45vh;
 		padding: 50px;
-		border
-		h2 {
+		border h2 {
 			color: $light-white;
 			text-align: center;
 		}
@@ -53,26 +60,27 @@ body {
 			list-style-type: none;
 		}
 	}
-	&__task1, &__task2 {
+	&__task1,
+	&__task2 {
 		h2 {
 			position: relative;
 			padding: 15px;
-			color:$fifth-color;
+			color: $fifth-color;
 			text-align: center;
 			margin: 20px 0px;
 		}
-		h2::before{
+		h2::before {
 			position: absolute;
-			content: '';
+			content: "";
 			height: 1px;
 			width: 40%;
 			left: 10%;
 			top: 0%;
 			border-bottom: 1px solid $pure-white;
 		}
-		h2::after{
+		h2::after {
 			position: absolute;
-			content: '';
+			content: "";
 			height: 10px;
 			width: 15%;
 			right: 10%;
@@ -80,4 +88,11 @@ body {
 			border-bottom: 1px solid $pure-white;
 		}
 	}
+}
+.btn-2{
+	transition: background-color 0.5s;
+}
+.btn-2:hover{
+	background-color: $fifth-color;
+	color: $pure-white;
 }

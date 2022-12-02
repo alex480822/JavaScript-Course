@@ -44,6 +44,15 @@ body {
   background-color: #06283D;
 }
 
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #d26dd2;
+  border-radius: 10px;
+  color: goldenrod;
+  cursor: pointer;
+}
+
 .main {
   background-color: #256D85;
 }
@@ -53,8 +62,7 @@ body {
   padding: 50px;
 }
 
-.main__fun border
-h2 {
+.main__fun border h2 {
   color: #eee;
   text-align: center;
 }
@@ -79,7 +87,7 @@ h2 {
 
 .main__task1 h2::before, .main__task2 h2::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 1px;
   width: 40%;
   left: 10%;
@@ -89,11 +97,21 @@ h2 {
 
 .main__task1 h2::after, .main__task2 h2::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 10px;
   width: 15%;
   right: 10%;
   bottom: -5%;
   border-bottom: 1px solid #fff;
+}
+
+.btn-2 {
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.btn-2:hover {
+  background-color: goldenrod;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

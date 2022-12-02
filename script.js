@@ -878,3 +878,98 @@ const liItem2 = document.createElement('li')
 liItem2.textContent = `cześć`
 document.body.appendChild(ulList2)
 ulList2.appendChild(liItem2)
+
+//Pobranie diva z html i dodanie do niego paragrafu
+const div73 = document.querySelector('.div73')
+const p73 = document.createElement('p')
+div73.appendChild(p73)
+console.log(div73);
+
+//Append- możemy dodawać wiele ellementów po przecinku do jednego elementu
+//AppendChild - możemy dodawać tylko jeden element
+const heading73 = document.createElement('h2')
+
+div73.append(p73, heading73, `cześć`)
+console.log(div73);
+
+//
+const btn74 = document.querySelector('.button3')
+
+//outerHTML powoduje że pracujemy na zewnątrz
+console.log(`--- outerHTML ---`);
+console.log(btn74.outerHTML);
+btn74.outerHTML = 'Zmień treść'
+
+//interHTML powoduje, że pracujemy tylko ze środkiem
+console.log(`--- interHTML ---`);
+console.log(btn74.innerHTML);
+btn74.innerHTML = ``
+
+//textContent- wypisuje cały kod z html jako text łącznie z użytymi znacznikami i stylami
+console.log(`--- TextContent ---`);
+console.log(div73.textContent);
+
+//innerText- wypisuje tylko text
+console.log(`--- innerText ---`);
+console.log(div73.innerHTML);
+
+console.log(`-------------------------------`);
+console.log(`----- Usuwanie elementów ze strony ----`);
+console.log(`-------------------------------`);
+
+const remove81 = document.querySelector('.remove')
+const p81 = document.querySelector('.remove__p')
+//Remove
+// remove81.remove()
+
+//RemoveChild
+remove81.removeChild(p81)
+
+//Wszystkie event'y
+console.log(`--- szystkie event'y ---`);
+//https://developer.mozilla.org/en-US/docs/Web/Events
+//https://mmcworld.pl/javascript/wszystko-co-musisz-wiedziec-o-addeventlistener-w-javascript/
+// POPULARNE EVENTY
+// Nazwa	Opis
+// click	Wykrywa kliknięcie myszą na element, zdecydowanie najczęściej wykorzystywany event
+// copy	Wykrywa kopiowanie treści (CMD + C / CTRL + C / PPM -> kopiuj)
+// keydown	Klawisz na klawiaturze został wciśnięty (ale nie puszczony)
+// keyup	Klawisz na klawiaturze został puszczony
+// mousemove	Kursor porusza się po elemencie
+// mouseover	Kursor znajduje się nad elementem, podobne do :hover w CSS
+// mouseenter	Kursor wjechał na element
+// mouseleave	Kursor zjechał z elementu
+// scroll	Wykrywa zdarzenie scrolla (przewijania strony)
+// DOMContentLoaded	Strona internetowa została wczytana (sam DOM, bez CSS, grafik itd.)
+// load	Cała strona internetowa została wczytana (DOM, CSS, grafiki itd.)
+// Seria eventów 'drag’	Dragstart, dragend itd.
+// Dzięki nim możemy za pomocą myszy przenosić elementy.
+// Oczywiście powyższa tabelka prezentuje tylko kilka wybranych eventów.
+// Jeśli chcesz poznać resztę, sprawdź ten artykuł na MDN. W menu po lewej stronie znajdziesz sekcję Event z listą wszystkich eventów.
+
+
+
+
+//Addevenlistener
+console.log(`--- Addevenlistener ---`);
+const btn1 = document.querySelector('.btn-1')
+const btn2 = document.querySelector('.btn-2')
+const btn3 = document.querySelector('.btn-3')
+
+btn1.addEventListener('click', function(){
+	console.log(`Kliknięto mnie`);
+})
+btn2.addEventListener('mouseover', () => console.log(`Najechano na mnie`))
+
+const test82 = () => {
+	console.log(`Double click`);
+}
+btn3.addEventListener(`dblclick`, test82)
+
+const buttons = document.querySelectorAll('button')
+const smile = () =>{
+	console.log(` 😊 `);
+}
+console.log(`------- Bardzo ważne!!!!--------`);
+//Leśli chcemy skorzystać z elementu w tablicy tablicopodobnej musimy skorzystać z pętli for. Najlepsza to forEach
+buttons.forEach(btn81 => btn81.addEventListener(`click`, smile))
