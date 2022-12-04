@@ -831,7 +831,7 @@ console.log(test71);
 const test72 = document.getElementsByTagName("ul");
 console.log(test72);
 
-//getRlementsByClassName
+//getRlementsByClassName. Nie doajemy kropki przy wyborze klasy!!!
 const test73 = document.getElementsByClassName("test");
 console.log(test73);
 
@@ -977,7 +977,7 @@ buttons.forEach((btn81) => btn81.addEventListener(`click`, smile));
 //offsetTop pokazuje jak daleko od początku strony klikneliśmy w px
 //e.target wyświetla obiekt
 //e.target.classList - zwraca nazwę klasy
-//e.stopPropagation() - stosujemy na funkcji która nie ma się wykonać(ma być pominięta) 
+//e.stopPropagation() - stosujemy na funkcji która nie ma się wykonać(ma być pominięta) na elemencie, który jest pod spoadem. Alternatywne rozwiązanie to zastosowanie w CSS na elemencie, któru ma być blokowany pointer-events: none;
 console.log(`---- e.target ---`);
 const test84 = (e) => {
 	console.log(e.target.classList),
@@ -1015,3 +1015,66 @@ gold.addEventListener("click", infogold, );
 //blue pojawi się
 //lime nie pojawi się gdyż pojwił się w fazie capture
 
+
+console.log(`-------------------------------`);
+console.log(`----- Delegacja zdarzeń ----`);
+console.log(`-------------------------------`);
+
+
+const allCircle = document.getElementsByClassName(`circle`)
+//Stosujemy  żywe kolekcje getElementsByClassName nie querySelectorAll gdyż będziemy dodawać elementy dynamicznie na stronę
+const lime2 = document.querySelector('.main__task7__lime2')
+const gold2 = document.querySelector('.main__task7__gold2')
+// //Na każdym okręgu nadliśmy sobie lisenera, który nasłuchuje na klika i jeśli ten klik zostanie wychwycony to w konsoli wypiszemy sobie to co przechowuje argument circle a ten argument/parametr przechowuje każdy pojedyńczy element naszegu elementu tablicopodobnego allcircles
+// const allCircle = document.querySelectorAll(`.circle`)
+// allCircle.forEach(circle => circle.addEventListener(`click`, () => {console.log(circle)}))
+
+//Dodanie diva i umieszczenie go w gold
+const newCircle = document.createElement('div')
+newCircle.classList.add('circle', 'main__task7__gold2-purple')
+gold2.append(newCircle)
+console.log(allCircle.length);
+
+//delegacja zdarzeń- pobieramy rodzica. Na rodzicu nadajemy listener'a w tym rodzicu możemy dodac if'a i sprawdzać czy w to klikneliśmy, jak klikneliśmy to wykona się kod. 
+// lime2.addEventListener('click', (e) =>{
+// 	if (e.target.matches('.circle2')) {
+// 		console.log(e.target);
+// 	}
+// })
+//Lub
+lime2.addEventListener('click', (e) =>{
+	if (e.target.classList.contains('circle2')) {
+		console.log(e.target);
+	}
+})
+
+console.log(`-------------------------------`);
+console.log(`----- Stylowanie w JS ----`);
+console.log(`-------------------------------`);
+
+const task7 = document.querySelector('.main__task7')
+const newtext7 = document.createElement('p')
+newtext7.textContent = 'Tak nie powinno się stylować w JS'
+task7.classList.add('main__task7-text')
+task7.appendChild(newtext7)
+// newtext7.style.fontSize = '12px'
+// newtext7.style.padding = '10px 20px'
+// newtext7.style.backgroundColor = 'purple'
+// newtext7.style.margin = '20px'
+// newtext7.style.borderRadius = '10px'
+//Prawidłowe stylowanie. Za pomocą CSS
+newtext7.classList.add('testTask7')
+
+
+//Dodowanie i usuwanie klas
+console.log(`-----Dodawanie i usuwanie klas ----`);
+ const addBtn = document.querySelector('.main__task8-add')
+ const removeBtn = document.querySelector('.main__task8-remove')
+ const toggleBtn = document.querySelector('.main__task8-toggle')
+ const text89 = document.querySelector('p')
+
+ const addClass = () =>{
+	text89.classList.add('test')
+ }
+
+ addBtn.addEventListener('click', addClass)

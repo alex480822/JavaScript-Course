@@ -19,6 +19,7 @@ body {
 	}
 }
 .section {
+	position: relative;
 	display: flex;
 	padding: 20px;
 	flex-direction: column;
@@ -45,7 +46,7 @@ body {
 	&__fun {
 		height: 45vh;
 		padding: 50px;
-		 
+
 		h1 {
 			color: $light-white;
 			text-align: center;
@@ -62,27 +63,41 @@ body {
 			list-style-type: none;
 		}
 	}
-	&__task6 {
-		&__lime {
+	&__task6,
+	&__task7 {
+		&__lime,
+		&__lime2 {
 			background-color: lime;
 			width: 150px;
 			height: 150px;
 			border-radius: 50%;
 		}
-		&__blue {
+		&__blue,
+		&__blue2 {
 			margin: 25px;
 			background-color: royalblue;
 			width: 100px;
 			height: 100px;
 			border-radius: 50%;
 		}
-		&__gold {
+		&__gold,
+		&__gold2 {
 			position: absolute;
 			margin: 35px;
+			// top: 50%;
+			// left: 50%;
+			// transform: translate(-50%, -50%);
 			background-color: gold;
 			width: 30px;
 			height: 30px;
 			border-radius: 50%;
+			&-purple{
+				margin: 7.5px;
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				background-color: purple;
+			}
 		}
 	}
 }
@@ -118,4 +133,11 @@ h2::after {
 	right: 10%;
 	bottom: -5%;
 	border-bottom: 1px solid $pure-white;
+}
+.testTask7{
+	margin: 20px;
+font-size: 12px;
+padding: 10px 20px;
+background-color: purple;
+border-radius: 10px;
 }

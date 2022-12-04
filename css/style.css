@@ -21,6 +21,7 @@ body {
 }
 
 .section {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,14 +78,14 @@ body {
   list-style-type: none;
 }
 
-.main__task6__lime {
+.main__task6__lime, .main__task6__lime2, .main__task7__lime, .main__task7__lime2 {
   background-color: lime;
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-.main__task6__blue {
+.main__task6__blue, .main__task6__blue2, .main__task7__blue, .main__task7__blue2 {
   margin: 25px;
   background-color: royalblue;
   width: 100px;
@@ -92,13 +93,21 @@ body {
   border-radius: 50%;
 }
 
-.main__task6__gold {
+.main__task6__gold, .main__task6__gold2, .main__task7__gold, .main__task7__gold2 {
   position: absolute;
   margin: 35px;
   background-color: gold;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+.main__task6__gold-purple, .main__task6__gold2-purple, .main__task7__gold-purple, .main__task7__gold2-purple {
+  margin: 7.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: purple;
 }
 
 .btn-2 {
@@ -137,5 +146,13 @@ h2::after {
   right: 10%;
   bottom: -5%;
   border-bottom: 1px solid #fff;
+}
+
+.testTask7 {
+  margin: 20px;
+  font-size: 12px;
+  padding: 10px 20px;
+  background-color: purple;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
