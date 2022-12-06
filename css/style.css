@@ -50,7 +50,8 @@ body {
   margin: 10px;
   border: 2px solid #d26dd2;
   border-radius: 10px;
-  color: goldenrod;
+  background-color: lightcyan;
+  color: blueviolet;
   cursor: pointer;
 }
 
@@ -154,5 +155,12 @@ h2::after {
   padding: 10px 20px;
   background-color: purple;
   border-radius: 10px;
+}
+
+.text89 {
+  padding: 10px  20px;
+  background-color: none;
+  border: 2px solid lime;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */

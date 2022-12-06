@@ -37,7 +37,8 @@ body {
 	margin: 10px;
 	border: 2px solid $fourth-color;
 	border-radius: 10px;
-	color: $fifth-color;
+	background-color:lightcyan;
+	color: blueviolet;
 	cursor: pointer;
 }
 
@@ -140,4 +141,10 @@ font-size: 12px;
 padding: 10px 20px;
 background-color: purple;
 border-radius: 10px;
+}
+.text89{
+	padding: 10px  20px;
+	background-color: none;
+	border: 2px solid lime;
+	border-radius: 8px;
 }

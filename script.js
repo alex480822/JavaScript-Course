@@ -1005,8 +1005,8 @@ const infogold = () => {
 };
 
 lime.addEventListener(`click`, infolime, { capture: true });
-blue.addEventListener("click", infoblue, );
-gold.addEventListener("click", infogold, );
+blue.addEventListener("click", infoblue);
+gold.addEventListener("click", infogold);
 //lime wyświetl się bo jest w fazie capture
 //blue nie
 //gold nie
@@ -1015,66 +1015,75 @@ gold.addEventListener("click", infogold, );
 //blue pojawi się
 //lime nie pojawi się gdyż pojwił się w fazie capture
 
-
 console.log(`-------------------------------`);
 console.log(`----- Delegacja zdarzeń ----`);
 console.log(`-------------------------------`);
 
-
-const allCircle = document.getElementsByClassName(`circle`)
+const allCircle = document.getElementsByClassName(`circle`);
 //Stosujemy  żywe kolekcje getElementsByClassName nie querySelectorAll gdyż będziemy dodawać elementy dynamicznie na stronę
-const lime2 = document.querySelector('.main__task7__lime2')
-const gold2 = document.querySelector('.main__task7__gold2')
+const lime2 = document.querySelector(".main__task7__lime2");
+const gold2 = document.querySelector(".main__task7__gold2");
 // //Na każdym okręgu nadliśmy sobie lisenera, który nasłuchuje na klika i jeśli ten klik zostanie wychwycony to w konsoli wypiszemy sobie to co przechowuje argument circle a ten argument/parametr przechowuje każdy pojedyńczy element naszegu elementu tablicopodobnego allcircles
 // const allCircle = document.querySelectorAll(`.circle`)
 // allCircle.forEach(circle => circle.addEventListener(`click`, () => {console.log(circle)}))
 
 //Dodanie diva i umieszczenie go w gold
-const newCircle = document.createElement('div')
-newCircle.classList.add('circle', 'main__task7__gold2-purple')
-gold2.append(newCircle)
+const newCircle = document.createElement("div");
+newCircle.classList.add("circle", "main__task7__gold2-purple");
+gold2.append(newCircle);
 console.log(allCircle.length);
 
-//delegacja zdarzeń- pobieramy rodzica. Na rodzicu nadajemy listener'a w tym rodzicu możemy dodac if'a i sprawdzać czy w to klikneliśmy, jak klikneliśmy to wykona się kod. 
+//delegacja zdarzeń- pobieramy rodzica. Na rodzicu nadajemy listener'a w tym rodzicu możemy dodac if'a i sprawdzać czy w to klikneliśmy, jak klikneliśmy to wykona się kod.
 // lime2.addEventListener('click', (e) =>{
 // 	if (e.target.matches('.circle2')) {
 // 		console.log(e.target);
 // 	}
 // })
 //Lub
-lime2.addEventListener('click', (e) =>{
-	if (e.target.classList.contains('circle2')) {
+lime2.addEventListener("click", (e) => {
+	if (e.target.classList.contains("circle2")) {
 		console.log(e.target);
 	}
-})
+});
 
 console.log(`-------------------------------`);
 console.log(`----- Stylowanie w JS ----`);
 console.log(`-------------------------------`);
 
-const task7 = document.querySelector('.main__task7')
-const newtext7 = document.createElement('p')
-newtext7.textContent = 'Tak nie powinno się stylować w JS'
-task7.classList.add('main__task7-text')
-task7.appendChild(newtext7)
+const task7 = document.querySelector(".main__task7");
+const newtext7 = document.createElement("p");
+newtext7.textContent = "Tak nie powinno się stylować w JS";
+task7.classList.add("main__task7-text");
+task7.appendChild(newtext7);
 // newtext7.style.fontSize = '12px'
 // newtext7.style.padding = '10px 20px'
 // newtext7.style.backgroundColor = 'purple'
 // newtext7.style.margin = '20px'
 // newtext7.style.borderRadius = '10px'
 //Prawidłowe stylowanie. Za pomocą CSS
-newtext7.classList.add('testTask7')
-
+newtext7.classList.add("testTask7");
 
 //Dodowanie i usuwanie klas
 console.log(`-----Dodawanie i usuwanie klas ----`);
- const addBtn = document.querySelector('.main__task8-add')
- const removeBtn = document.querySelector('.main__task8-remove')
- const toggleBtn = document.querySelector('.main__task8-toggle')
- const text89 = document.querySelector('p')
 
- const addClass = () =>{
-	text89.classList.add('test')
- }
+const addBtn89 = document.querySelector(".main__task8-Add");
+const textBox89 = document.querySelector(".text-box89");
 
- addBtn.addEventListener('click', addClass)
+const addClass89 = () =>{
+	textBox89.classList.add('text89')
+}
+
+const removeBtn89 = document.querySelector('.main__task8-Remove')
+const removeClass89 = () =>{
+	textBox89.classList.remove('text89')
+}
+
+const toggleBtn89 = document.querySelector('.main__task8-Toggle')
+const toggleClass89 = () => {
+	textBox89.classList.toggle('text89')
+}
+
+addBtn89.addEventListener("click", addClass89);
+removeBtn89.addEventListener('click', removeClass89)
+toggleBtn89.addEventListener('click', toggleClass89)
+
