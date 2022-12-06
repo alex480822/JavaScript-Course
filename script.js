@@ -1087,3 +1087,22 @@ addBtn89.addEventListener("click", addClass89);
 removeBtn89.addEventListener('click', removeClass89)
 toggleBtn89.addEventListener('click', toggleClass89)
 
+//Task create li list and modify it
+console.log(`-----Zadanie dodawanie listy li i jej modyfikowanie ----`);
+
+const ul90 = document.createElement('ul')
+
+document.body.appendChild(ul90)
+const number90 = 10;
+
+for (let i = 1; i <= number90; i++) {
+	const li90 = document.createElement('li')
+	li90.textContent = i
+	ul90.append(li90)
+}
+
+const last90 = ul90.querySelector('li:nth-child(10)')
+last90.textContent = 'jestem ostanim elementem'
+last90.style.backgroundColor = 'blue';
+last90.style.padding = '20px 40px'
+last90.style.fontSize = '28px'
