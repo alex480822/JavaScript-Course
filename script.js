@@ -1106,3 +1106,85 @@ last90.textContent = 'jestem ostanim elementem'
 last90.style.backgroundColor = 'blue';
 last90.style.padding = '20px 40px'
 last90.style.fontSize = '28px'
+
+//Task 2 addeventlistener + button
+console.log(`-----Zadanie 2 ----`);
+
+const buttons91 = document.querySelector('.btn11')
+const buttons92 = document.querySelector('.btn22')
+const square = document.querySelector('.square')
+const p91 = document.querySelector('.p1')
+const p92 = document.querySelector('.p2')
+
+const functionBtn1 = () =>{ console.log(`Cześć programisto`);}
+const functionSquareRed = () => {
+	square.style.backgroundColor = 'tomato'
+}
+const functionSquareBlue = () =>{
+	square.style.backgroundColor = 'royalblue'
+}
+const functionPizza = () =>{
+	p91.classList.toggle(`show`)
+	p92.classList.toggle(`show`)
+	//Opcja alternatywna- dłużasza
+	// if (p91.classList.contains('show')) {
+	// 	p91.classList.remove('show')
+	// 	p92.classList.add('show')
+	// }else{
+	// 	p91.classList.add('show')
+	// 	p92.classList.remove('show')
+	// }
+}
+buttons91.addEventListener('dbclick', functionBtn1)
+square.addEventListener('mouseenter', functionSquareRed)
+square.addEventListener('mouseleave', functionSquareBlue)
+buttons92.addEventListener('click', functionPizza)
+
+//SetTimeout 5s. późnia wykonywanie funkcji
+console.log(`----- setTimeout ----`);
+setTimeout(functionPizza, 5000)
+
+//setInterval Funkcja będzie wykonywać się co 1 sekundę
+console.log(`----- setInterval ----`);
+setInterval(functionPizza, 1000)
+
+//Strict Mode- wyłacza ignorwoanie niektórych błędów. 
+'use strict'
+
+//Alert- komunikat po wejściu na stronę
+console.log(`----- Alert ----`);
+// alert('Witaj')
+
+// confirm
+console.log(`----- confirm ----`);
+// przydaje się w przypadku gdy chcemy przerwać np. wysyłanie pliku na stronę. Wtedy dostajemy informacje aby nie zamykać okna przeglądarki. Przykład
+// if (confirm('Nie zamykaj okna')){
+// 	console.log(`Dobrze`);
+// }else{
+// 	console.log(`Nie to nie`);
+// }
+
+//promt
+console.log(`----- promt ----`);
+// const name91 = prompt('cześć jak masz na imię')
+// console.log(`Cześć ${name91}`);
+
+//Math.random()
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+
+console.log(`-------------------------------`);
+console.log(`----- Atrybuty w JS ----`);
+console.log(`-------------------------------`);
+
+const ptask9 = document.querySelector('.ptask9')
+
+//Dodaje / usuwa atrybut i przypisuje do niego wartość
+ptask9.setAttribute('href', '#')
+
+//pobiera wartość, która jest przypisana do danego atrybutu
+// console.log(img.getAttribute('alt'));
+
+//Sprawdza czy ma taki atrybut
+console.log(ptask9.hasAttribute('style'));
+//Usuwa atryut z DOM
+ptask9.removeAttribute('style')
