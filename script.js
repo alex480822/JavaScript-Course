@@ -1069,63 +1069,65 @@ console.log(`-----Dodawanie i usuwanie klas ----`);
 const addBtn89 = document.querySelector(".main__task8-Add");
 const textBox89 = document.querySelector(".text-box89");
 
-const addClass89 = () =>{
-	textBox89.classList.add('text89')
-}
+const addClass89 = () => {
+	textBox89.classList.add("text89");
+};
 
-const removeBtn89 = document.querySelector('.main__task8-Remove')
-const removeClass89 = () =>{
-	textBox89.classList.remove('text89')
-}
+const removeBtn89 = document.querySelector(".main__task8-Remove");
+const removeClass89 = () => {
+	textBox89.classList.remove("text89");
+};
 
-const toggleBtn89 = document.querySelector('.main__task8-Toggle')
+const toggleBtn89 = document.querySelector(".main__task8-Toggle");
 const toggleClass89 = () => {
-	textBox89.classList.toggle('text89')
-}
+	textBox89.classList.toggle("text89");
+};
 
 addBtn89.addEventListener("click", addClass89);
-removeBtn89.addEventListener('click', removeClass89)
-toggleBtn89.addEventListener('click', toggleClass89)
+removeBtn89.addEventListener("click", removeClass89);
+toggleBtn89.addEventListener("click", toggleClass89);
 
 //Task create li list and modify it
 console.log(`-----Zadanie dodawanie listy li i jej modyfikowanie ----`);
 
-const ul90 = document.createElement('ul')
+const ul90 = document.createElement("ul");
 
-document.body.appendChild(ul90)
+document.body.appendChild(ul90);
 const number90 = 10;
 
 for (let i = 1; i <= number90; i++) {
-	const li90 = document.createElement('li')
-	li90.textContent = i
-	ul90.append(li90)
+	const li90 = document.createElement("li");
+	li90.textContent = i;
+	ul90.append(li90);
 }
 
-const last90 = ul90.querySelector('li:nth-child(10)')
-last90.textContent = 'jestem ostanim elementem'
-last90.style.backgroundColor = 'blue';
-last90.style.padding = '20px 40px'
-last90.style.fontSize = '28px'
+const last90 = ul90.querySelector("li:nth-child(10)");
+last90.textContent = "jestem ostanim elementem";
+last90.style.backgroundColor = "blue";
+last90.style.padding = "20px 40px";
+last90.style.fontSize = "28px";
 
 //Task 2 addeventlistener + button
 console.log(`-----Zadanie 2 ----`);
 
-const buttons91 = document.querySelector('.btn11')
-const buttons92 = document.querySelector('.btn22')
-const square = document.querySelector('.square')
-const p91 = document.querySelector('.p1')
-const p92 = document.querySelector('.p2')
+const buttons91 = document.querySelector(".btn11");
+const buttons92 = document.querySelector(".btn22");
+const square = document.querySelector(".square");
+const p91 = document.querySelector(".p1");
+const p92 = document.querySelector(".p2");
 
-const functionBtn1 = () =>{ console.log(`Cześć programisto`);}
+const functionBtn1 = () => {
+	console.log(`Cześć programisto`);
+};
 const functionSquareRed = () => {
-	square.style.backgroundColor = 'tomato'
-}
-const functionSquareBlue = () =>{
-	square.style.backgroundColor = 'royalblue'
-}
-const functionPizza = () =>{
-	p91.classList.toggle(`show`)
-	p92.classList.toggle(`show`)
+	square.style.backgroundColor = "tomato";
+};
+const functionSquareBlue = () => {
+	square.style.backgroundColor = "royalblue";
+};
+const functionPizza = () => {
+	p91.classList.toggle(`show`);
+	p92.classList.toggle(`show`);
 	//Opcja alternatywna- dłużasza
 	// if (p91.classList.contains('show')) {
 	// 	p91.classList.remove('show')
@@ -1134,22 +1136,22 @@ const functionPizza = () =>{
 	// 	p91.classList.add('show')
 	// 	p92.classList.remove('show')
 	// }
-}
-buttons91.addEventListener('dbclick', functionBtn1)
-square.addEventListener('mouseenter', functionSquareRed)
-square.addEventListener('mouseleave', functionSquareBlue)
-buttons92.addEventListener('click', functionPizza)
+};
+buttons91.addEventListener("dbclick", functionBtn1);
+square.addEventListener("mouseenter", functionSquareRed);
+square.addEventListener("mouseleave", functionSquareBlue);
+buttons92.addEventListener("click", functionPizza);
 
 //SetTimeout 5s. późnia wykonywanie funkcji
 console.log(`----- setTimeout ----`);
-setTimeout(functionPizza, 5000)
+setTimeout(functionPizza, 5000);
 
 //setInterval Funkcja będzie wykonywać się co 1 sekundę
 console.log(`----- setInterval ----`);
-setInterval(functionPizza, 1000)
+setInterval(functionPizza, 1000);
 
-//Strict Mode- wyłacza ignorwoanie niektórych błędów. 
-'use strict'
+//Strict Mode- wyłacza ignorwoanie niektórych błędów.
+("use strict");
 
 //Alert- komunikat po wejściu na stronę
 console.log(`----- Alert ----`);
@@ -1176,15 +1178,70 @@ console.log(`-------------------------------`);
 console.log(`----- Atrybuty w JS ----`);
 console.log(`-------------------------------`);
 
-const ptask9 = document.querySelector('.ptask9')
+const ptask9 = document.querySelector(".ptask9");
 
 //Dodaje / usuwa atrybut i przypisuje do niego wartość
-ptask9.setAttribute('href', '#')
+ptask9.setAttribute("href", "#");
 
 //pobiera wartość, która jest przypisana do danego atrybutu
 // console.log(img.getAttribute('alt'));
 
 //Sprawdza czy ma taki atrybut
-console.log(ptask9.hasAttribute('style'));
+console.log(ptask9.hasAttribute("style"));
 //Usuwa atryut z DOM
-ptask9.removeAttribute('style')
+ptask9.removeAttribute("style");
+
+//Relacje rodzinne
+const grandpa = document.querySelector(".grandparent");
+console.log(grandpa.querySelector(".parent"));
+console.log(grandpa.querySelectorAll(".child"));
+
+const middleChild = document.querySelector('.middle-child')
+console.log(middleChild);
+const prevSibling = middleChild.previousElementSibling
+console.log(prevSibling);
+const nextSibling = middleChild.nextElementSibling
+console.log(nextSibling);
+
+//Cofnięcie się do rodzica
+const parentEl = middleChild.parentElement
+console.log(parentEl);
+//Lepsza metoda closest
+
+console.log(middleChild.closest('.grandparent'));
+
+//Zadanie 99
+console.log(`----- Zadanie 99 ----`);
+const img99 = document.createElement('img')
+document.body.append(img99)
+img99.setAttribute("src" ,"img/1.jpg")
+img99.setAttribute("style", "width: 100%")
+img99.setAttribute("alt", "dwie osoby grają na konsoli")
+
+const function99 = () =>{
+	console.log(`Ten tekst pojawi się opóźniony o 2s`);
+}
+setTimeout(function99, 2000)
+
+//Zadanie 100
+console.log(`----- Zadanie 100 ----`);
+
+const div100 = document.createElement('div')
+document.body.append(div100)
+div100.classList.add('wrapper')
+const ul100 = document.createElement('ul')
+div100.append(ul100)
+
+for (let i = 1; i <=5 ; i++) {
+	const li100 = document.createElement('li')
+	li100.textContent = i;
+	li100.setAttribute("dataatrybutID", i)
+	//lub li100.dataset.id = i;
+	ul100.append(li100)
+}
+//Za pomocą dataatrybutu dostanie się do 3 li
+const thirdLi100 = document.querySelector('[dataatrybutID="3"]')
+console.log(thirdLi100);
+//dostanie się z 3 tagu li do wrappera
+console.log(thirdLi100.closest('.wrapper'));
+
