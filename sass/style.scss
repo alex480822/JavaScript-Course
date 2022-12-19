@@ -52,6 +52,14 @@ body {
 			color: $light-white;
 			text-align: center;
 		}
+		&-project{
+			font-size: 20px;
+			a{
+				color: $pure-white;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
 	}
 	&__task1,
 	&__task2 {
